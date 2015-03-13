@@ -1,0 +1,27 @@
+{
+  "name": "fis-zoo",
+  "version": "1.0.0",
+  "description": "A front-end module solution with modjs based on fis",
+  "main": "index.js",
+  "bin": {
+    "zoo": "bin/zoo",
+    "fis-zoo": "bin/zoo"
+  },
+  "scripts": {
+    "test": "no test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xwenliang/fis-zoo.git"
+  },
+  "keywords": [
+    "fis",
+    "fis-zoo"
+  ],
+  "author": "zooble",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/xwenliang/fis-zoo/issues"
+  },
+  "homepage": "https://github.com/xwenliang/fis-zoo"
+}
