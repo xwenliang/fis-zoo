@@ -1,6 +1,6 @@
 {
   "name": "fis-zoo",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A front-end module solution with modjs based on fis",
   "main": "index.js",
   "bin": {

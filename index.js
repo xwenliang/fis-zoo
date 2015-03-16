@@ -11,14 +11,7 @@ var removeTestData = function(content){
 };
 
 fis.config.merge({
-    statics: 'statics',
-    domain: '',
-    onlineDomain: '',
-    receiver: '',
-    viewsRemoteDir: '',
-    staticRemoteDir: '',
-    viewsOnlineDir: '',
-    staticOnlineDir: '',
+    statics: '/static',
     modules: {
         parser: {
             less: 'less',
@@ -53,18 +46,18 @@ fis.config.merge({
                 scale: 0.5
             }
         },
-        lint : {
-            jshint : {
-                camelcase : true,
-                curly : true,
-                eqeqeq : true,
-                forin : true,
-                immed : true,
-                latedef : true,
-                newcap : true,
-                noarg : true,
-                noempty : true,
-                node : true
+        lint: {
+            jshint: {
+                camelcase: true,
+                curly: true,
+                eqeqeq: true,
+                forin: true,
+                immed: true,
+                latedef: true,
+                newcap: true,
+                noarg: true,
+                noempty: true,
+                node: true
             }
         }
     },
@@ -84,22 +77,17 @@ fis.config.merge({
         ]
     },
     roadmap: {
-        domain: {
-            '**.js': '${domain}',
-            '**.less': '${domain}',
-            'image': '${domain}'
-        },
         ext: {
             less: 'css',
             tpl: 'js'
         },
-        path : [
-        	{
-        		//非模块化的组件，如模块解析器
-        		reg: /^\/modules\/mod\/mod\.js/i,
-        		isMod: false,
-        		release: '${statics}/temp/$&'
-        	},
+        path: [
+            {
+                //非模块化的组件，如模块解析器
+                reg: /^\/modules\/mod\/mod\.js/i,
+                isMod: false,
+                release: '${statics}/temp/$&'
+            },
             {
                 //公共组件
                 reg: /^\/modules\/([^\/]+)\/(?:.+).js$/i,
@@ -124,8 +112,8 @@ fis.config.merge({
                 release: '${statics}/$&'
             },
             {
-                //图片文件
-                reg: /^(.*)\.(jpg|gif|png)$/i,
+                //图片等媒体文件
+                reg: /^(.*)\.(jpg|gif|png|mp3|mp4)$/i,
                 release: '${statics}/$&'
             },
             {
@@ -166,58 +154,6 @@ fis.config.merge({
                 //其他上文未匹配到的
                 reg : "**",
                 release : false
-            }
-        ]
-    },
-    deploy: {
-        //发到测试机
-        test: [
-            //模版
-            {
-                receiver: '${receiver}',
-                from: '${static}/views',
-                to: '${viewsRemoteDir}',
-                include: '**.phtml',
-                exclude: '',
-                replace: {
-                    from: '',
-                    to: ''
-                },
-                subOnly: true
-            },
-             //静态资源
-            {
-                receiver: '${receiver}',
-                from: '${statics}',
-                to: '${staticRemoteDir}',
-                include: '',
-                exclude: /.*\.(html|phtml)/i,
-                replace: {
-                    from: '',
-                    to: ''
-                }
-            }
-        ],
-        //发到svn 上线
-        online: [
-            {
-                from: '${static}/views',
-                to: '${viewsOnlineDir}',
-                include: '**.phtml',
-                subOnly: true,
-                replace: {
-                    from: '${domain}',
-                    to: '${onlineDomain}'
-                }
-            },
-            {
-                from: '${static}',
-                to: '${staticOnlineDir}',
-                exclude: /.*\.(html|phtml)/i,
-                replace: {
-                    from: '${domain}',
-                    to: '${onlineDomain}'
-                }
             }
         ]
     }
