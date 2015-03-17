@@ -61,6 +61,7 @@ fis.config.merge({
             }
         }
     },
+    /* pack不能在项目中重写？
     pack: {
         'pkg/common.js': [
             'modules/mod/**.js',
@@ -75,7 +76,7 @@ fis.config.merge({
             'css/common.less',
             'modules/**.less'
         ]
-    },
+    },*/
     roadmap: {
         ext: {
             less: 'css',
