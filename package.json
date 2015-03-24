@@ -1,6 +1,6 @@
 {
   "name": "fis-zoo",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A front-end module solution with modjs based on fis",
   "main": "index.js",
   "bin": {
@@ -41,7 +41,10 @@
     "fis-postpackager-autoload": "0.0.18",
     "fis-postpackager-simple": "0.0.23",
     "fis-lint-jshint": "0.0.4",
-    "fis-optimizer-html-minifier": "0.0.9"
+    "fis-optimizer-html-minifier": "0.0.9",
+    "fis-deploy-default": "0.0.5",
+    "fis-preprocessor-components": "1.0.15",
+    "fis-prepackager-derived": "~0.0.2"
   },
   "bugs": {
     "url": "https://github.com/xwenliang/fis-zoo/issues"
