@@ -45,8 +45,17 @@ fis.cli.help.commands = [ 'release', 'install', 'server' ];
 fis.cli.version = function(){
     var content = [
         '',
-        '  v'.bold.green + fis.cli.info.version.bold.green,
+        'v' + fis.cli.info.version.bold.green,
         ''
+        // ' __' + '/\\\\\\\\\\\\\\\\\\\\\\\\'.bold.red + '_____' + '/\\\\\\\\\\\\\\\\\\\\\\'.bold.yellow + '_______' + '/\\\\\\\\\\\\\\\\\\\\\\'.bold.green + '___',
+        // '  _' + '\\///////////\\\\\\'.bold.red + '__' + '/\\\\\\////////\\\\\\'.bold.yellow + '____' + '/\\\\\\////////\\\\\\'.bold.green + '__' + '       ',
+        // '   _________' + '/\\\\\\//'.bold.red + '__' + '\\/\\\\\\'.bold.yellow +'______' + '\\/\\\\\\'.bold.yellow+'___' + '\\/\\\\\\'.bold.green +'______' + '\\/\\\\\\'.bold.green + '__',
+        // '    ______' + '/\\\\\\//'.bold.red + '_____' + '\\/\\\\\\'.bold.yellow + '______' + '\\/\\\\\\'.bold.yellow + '___' + '\\/\\\\\\'.bold.green + '______' + '\\/\\\\\\'.bold.green + '__',
+        // '     ___' + '/\\\\\\//'.bold.red + '________' + '\\/\\\\\\'.bold.yellow + '______' + '\\/\\\\\\'.bold.yellow + '___' + '\\/\\\\\\'.bold.green + '______' + '\\/\\\\\\'.bold.green + '__',
+        // '      ' + '/\\\\\\//'.bold.red + '___________' + '\\/\\\\\\'.bold.yellow + '______' + '\\/\\\\\\'.bold.yellow + '___' + '\\/\\\\\\'.bold.green + '______' + '\\/\\\\\\'.bold.green + '__',
+        // '      ' + '\\//\\\\\\\\\\\\\\\\\\\\\\\\'.bold.red + '___' + '\\//\\\\\\\\\\\\\\\\\\\\\\/'.bold.yellow + '____' + '\\//\\\\\\\\\\\\\\\\\\\\\\/'.bold.green + '___',
+        // '       _' + '\\////////////'.bold.red + '_____' + '\\///////////'.bold.yellow + '_______' + '\\///////////'.bold.green + '_____',
+        // ''
     ].join('\n');
     console.log(content);
 };

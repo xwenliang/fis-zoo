@@ -1,15 +1,15 @@
 {
   "name": "fis-zoo",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A front-end module solution with modjs based on fis",
-  "main": "index.js",
+  "main": "index",
   "bin": {
     "zoo": "bin/zoo",
     "fis-zoo": "bin/zoo"
   },
   "scripts": {
-    "unbuild": "npm remove fis-zoo -g",
-    "test": "no test"
+    "install": "npm install fis-zoo -g",
+    "uninstall": "npm remove fis-zoo -g"
   },
   "repository": {
     "type": "git",
@@ -19,12 +19,12 @@
     "fis",
     "fis-zoo"
   ],
-  "author": "zooble",
+  "author": {
+    "name": "zooble",
+    "email": "wenliang.web@gmail.com"
+  },
   "license": "BSD",
   "dependencies": {
-    "zoo-kernel": "1.0.0",
-    "zoo-command-install": "1.0.0",
-
     "colors": "0.6.2",
     "commander": "1.3.2",
     "fis-command-release": "0.9.10",
@@ -44,7 +44,10 @@
     "fis-optimizer-html-minifier": "0.0.9",
     "fis-deploy-default": "0.0.5",
     "fis-preprocessor-components": "1.0.15",
-    "fis-prepackager-derived": "~0.0.2"
+    "fis-prepackager-derived": "0.0.3",
+    "zoo-kernel": "1.0.0",
+    "zoo-command-install": "1.0.0",
+    "zoo-command-init": "1.0.0"
   },
   "bugs": {
     "url": "https://github.com/xwenliang/fis-zoo/issues"
