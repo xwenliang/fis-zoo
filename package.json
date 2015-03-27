@@ -1,16 +1,13 @@
 {
   "name": "fis-zoo",
-  "version": "1.0.10",
+  "version": "1.0.12",
   "description": "A front-end module solution with modjs based on fis",
   "main": "index",
   "bin": {
     "zoo": "bin/zoo",
     "fis-zoo": "bin/zoo"
   },
-  "scripts": {
-    "install": "npm install fis-zoo -g",
-    "uninstall": "npm remove fis-zoo -g"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/xwenliang/fis-zoo.git"
@@ -45,7 +42,7 @@
     "fis-deploy-default": "0.0.5",
     "fis-preprocessor-components": "1.0.15",
     "fis-prepackager-derived": "0.0.3",
-    "zoo-kernel": "1.0.0",
+    "zoo-kernel": "1.0.1",
     "zoo-command-install": "1.0.0",
     "zoo-command-init": "1.0.0"
   },
