@@ -5,6 +5,6 @@
 ####使用方法：
 安装：```npm install fis-zoo -g```
 <br>
-使用：```fis-zoo release ...``` 或 ```zoo release ...```
+使用：```fis-zoo release``` 或 ```zoo release``` 参数同FIS
 ####支持release到相对目录，需要如下配置：
 ```fis.config.set('roadmap.relative', true);```
