@@ -1,6 +1,6 @@
 {
   "name": "fis-zoo",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "A front-end module solution with modjs based on fis",
   "main": "index",
   "bin": {
@@ -39,7 +39,7 @@
     "fis-deploy-default": "0.0.5",
     "fis-preprocessor-components": "1.0.15",
     "fis-prepackager-derived": "0.0.3",
-    "zoo-kernel": "1.1.1",
+    "zoo-kernel": "1.1.2",
     "zoo-command-install": "1.0.0",
     "zoo-postpackager-autoload": "1.2.1",
     "zoo-packager-map": "0.0.1",
