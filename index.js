@@ -128,6 +128,11 @@ fis.config.merge({
         prepackager: 'derived'
     },
     settings: {
+        parser: {
+            utc: {
+                variable: 'data'
+            }
+        },
         postprocessor: {
             jswrapper: {
                 type: 'amd'

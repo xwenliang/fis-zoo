@@ -21,11 +21,9 @@
 我们将之优化为只有引入这个模块的页面才注入该模块的css文件。（依然没有兼容异步模式，只要引入，不管同步异步，都会提前注入这个模块的css文件）
 <br>
 
-####todo
+4. 前端模板预编译的时候，给underscore传入`{variable: 'data'}`，这样可以避免使用with解析模板。但是在书写模板的时候需要注意，必须使用`data.xxx`的形式
 
-1.  修改前端模板预编译模块
-<br>
-之前依赖的fis-parser-utc模块，使用了underscore来解析前端模板，解析出来的模板函数使用了with，导致了无法使用严格模式。并且在模板中使用`<%- %>`的方式输出时，会调用underscore的`_.escape`，而如果该项目中没有引入underscore的话，势必会`_ is not defined`。而单独为了使用这个方法而引入underscore，显然得不偿失
+####todo
 
 2.  __inline引入html模板的时候，不支持传入自定义数据。
 3.  修改zoo-command-install模块，支持从设定好的组件库获取组件，并初始化目录
