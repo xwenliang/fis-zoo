@@ -129,9 +129,9 @@ fis.config.merge({
     },
     settings: {
         parser: {
-            utc: {
-                variable: 'data'
-            }
+            // utc: {
+            //     variable: 'data'
+            // }
         },
         postprocessor: {
             jswrapper: {
