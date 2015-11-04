@@ -1,6 +1,6 @@
 {
   "name": "fis-zoo",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "A front-end module solution with modjs based on fis",
   "main": "index",
   "bin": {
@@ -29,7 +29,7 @@
     "fis-postprocessor-jswrapper": "0.0.8",
     "fis-optimizer-uglify-js": "0.1.2",
     "fis-optimizer-clean-css": "0.0.9",
-    "fis-spriter-csssprites": "0.2.8",
+    "fis-spriter-csssprites": "0.3.5",
     "fis-parser-utc": "0.0.2",
     "fis-parser-less": "0.1.0",
     "fis-postprocessor-require-async": "0.0.8",
