@@ -2,7 +2,6 @@
 基于FIS的前端模块化解决方案，根据自己团队的需求，优化改造了一些功能。  
 
 ![version](https://img.shields.io/npm/v/fis-zoo.svg?style=flat-square)
-![dep](https://david-dm.org/beefe/fis-zoo.svg?style=flat-square)
 
 ####使用方法：
 安装：`npm install fis-zoo -g`  
