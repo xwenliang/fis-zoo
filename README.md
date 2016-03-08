@@ -26,9 +26,11 @@
 
 - 支持其他拓展名的模板直接渲染，如 `.phtml`  
 首先执行`zoo server start`  
-然后执行`zoo server open`
-打开目录后，找到`www/node_modules/express/node_modules/send/node_modules/mime/types/mime.types`文件，
-搜索`text/html`，找到`text/html					html htm`在htm之后添加`phtml`即可(后期会融合到zoo install中)
+然后执行`zoo server open`  
+打开目录后，找到`www/node_modules/express/node_modules/send/node_modules/mime/types/mime.types`文件  
+搜索`text/html`，找到`text/html html htm`在`htm`之后添加`phtml`  
+然后执行`zoo server stop && zoo server start`即可(后期会融合到zoo install中)
+
 
 ####todo
 
