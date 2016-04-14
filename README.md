@@ -22,6 +22,19 @@
 5. 修复了动态模块编译时候的warn  
 如：`[NOTIC] can't find async resource ['ace/mode/'+opt.language]`
 
+6. 做了适合自己团队使用的zoo-install  
+在项目根目录创建zoo.json，执行`zoo install`，即可生成基础的fis-conf.js并安装zoo.json中声明依赖的模块
+如：  
+```
+	//zoo.json
+	{
+		{
+			"name": "example",//项目名称
+			"downloadDirName": "modules",//模块安装目录
+			"components": ["Zepto", "mo", "mod", "preload", "scrollPageCube"]//项目依赖的模块
+		}
+	}
+
 ####文档说明
 
 - 支持其他拓展名的模板直接渲染，如 `.phtml`  
@@ -35,4 +48,3 @@
 ####todo
 
 1.  __inline引入html模板的时候，不支持传入自定义数据。
-2.  修改zoo-command-install模块，支持从设定好的组件库获取组件，并初始化目录
