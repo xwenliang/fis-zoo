@@ -32,6 +32,9 @@
 		"downloadDirName": "modules",//模块安装目录
 		"components": ["Zepto", "mo", "mod", "preload", "scrollPageCube"]//项目依赖的模块
 	}
+```
+
+7. `v2.3.0`新增了css的autoprefixer
 
 ####文档说明
 

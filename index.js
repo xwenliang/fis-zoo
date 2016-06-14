@@ -113,6 +113,7 @@ fis.config.merge({
         },
         postprocessor: {
             js: ['jswrapper', 'require-async'],
+            css: 'autoprefixer',
             html: 'require-async'
         },
         postpackager : ['autoload', 'simple'],
@@ -136,6 +137,11 @@ fis.config.merge({
         postprocessor: {
             jswrapper: {
                 type: 'amd'
+            },
+            autoprefixer: {
+                // detail config (https://github.com/postcss/autoprefixer#browsers)
+                "browsers": ["Android >= 2.3", "ChromeAndroid > 1%", "iOS >= 4"],
+                "cascade": true
             }
         },
         postpackager: {
