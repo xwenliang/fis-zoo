@@ -103,6 +103,7 @@ fis.cli.run = function(argv){
 fis.config.merge({
     modules: {
         parser: {
+            js: 'babel',
             less: 'less',
             tpl: 'utc'
         },
