@@ -1,6 +1,6 @@
 {
   "name": "fis-zoo",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "description": "A front-end module solution with modjs based on fis",
   "main": "index",
   "bin": {
@@ -45,7 +45,7 @@
     "zoo-postpackager-simple": "0.0.1",
     "zoo-optimizer-html-minifier": "0.1.2",
     "zoo-optimizer-png-compressor": "0.1.0",
-    "zoo-parser-babel": "^1.0.1"
+    "zoo-parser-babel": "^1.0.2"
   },
   "bugs": {
     "url": "https://github.com/xwenliang/fis-zoo/issues"

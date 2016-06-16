@@ -34,7 +34,21 @@
 	}
 ```
 
-7. `v2.3.0`新增了css的autoprefixer
+7. `v2.3.0`新增了css的autoprefixer  
+8. `v2.4.1`新增了babel，默认支持`es2015`的编译，需要做如下配置：
+```javascript
+    roadmap: {
+        path: [
+            {
+                reg: /^\/modules\/([^\/]+)\/(?:[^\/]+)\.js$/i,
+                isMod: true,
+                id: '$1',
+                //开启下面这条配置
+                isES6: true
+            }
+        ]
+    }
+```
 
 ####文档说明
 
