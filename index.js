@@ -126,7 +126,7 @@ fis.config.merge({
         },
         spriter: 'csssprites',
         packager: 'map',
-        deploy: 'default',
+        deploy: ['default', 'ftp'],
         prepackager: 'derived'
     },
     settings: {

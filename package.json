@@ -1,6 +1,6 @@
 {
   "name": "fis-zoo",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "description": "A front-end module solution with modjs based on fis",
   "main": "index",
   "bin": {
@@ -36,6 +36,7 @@
     "fis-postprocessor-require-async": "0.0.8",
     "fis-lint-jshint": "0.0.4",
     "fis-deploy-default": "0.0.5",
+    "fis-deploy-ftp": "0.0.2",
     "fis-preprocessor-components": "1.0.15",
     "fis-prepackager-derived": "0.0.3",
     "zoo-kernel": "1.2.0",
