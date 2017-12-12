@@ -1,13 +1,13 @@
-#fis-zoo
+# fis-zoo
 基于FIS的前端模块化解决方案，根据自己团队的需求，优化改造了一些功能。  
 
 ![version](https://img.shields.io/npm/v/fis-zoo.svg?style=flat-square)
 
-####使用方法：
+#### 使用方法：
 安装：`npm install fis-zoo -g`  
 使用：`fis-zoo release` 或 `zoo release` 参数同FIS
 
-####优化改造列表：
+#### 优化改造列表：
 1. 支持release到相对目录，需要如下配置：  
 `fis.config.set('roadmap.relative', true);`
 
@@ -50,7 +50,7 @@
     }
 ```
 
-####文档说明
+#### 文档说明
 
 - 支持其他拓展名的模板直接渲染，如 `.phtml`  
 首先执行`zoo server start`  
@@ -60,6 +60,7 @@
 然后执行`zoo server stop && zoo server start`即可(后期会融合到zoo install中)
 
 
-####todo
+#### todo
 
-1.  __inline引入html模板的时候，不支持传入自定义数据。
+1. __inline引入html模板的时候，不支持传入自定义数据。
+2. 找不到的文件，编译没有报警。（如index.html中引用了abc.js，若abc.js没有被找到会直接忽略）
